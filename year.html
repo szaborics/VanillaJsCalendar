@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar App Vanilla JS</title>
+
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/6dfeb19827.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- GOOGLE FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!--Local styling-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="row justify-content-lg-center" id="yearDisplay"></div>
+    </div>
+
+    <div id="weekdays">
+      <div>Sunday</div>
+      <div>Monday</div>
+      <div>Tuesday</div>
+      <div>Wednesday</div>
+      <div>Thursday</div>
+      <div>Friday</div>
+      <div>Saturday</div>
+    </div>
+
+    <div id="calendar"></div>
+
+    <div id="newEventModal">
+      <h2>New Event</h2>
+
+      <input id="eventTitleInput" placeholder="Event Title" />
+
+      <button id="saveButton">Save</button>
+      <button id="cancelButton">Cancel</button>
+    </div>
+
+    <div id="deleteEventModal">
+      <h2>Event</h2>
+
+      <p id="eventText"></p>
+
+      <button id="deleteButton">Delete</button>
+      <button id="closeButton">Close</button>
+    </div>
+
+    <div id="modalBackDrop"></div>
+
+    <script src="./scripts/year.js"></script>
+  </body>
+</html>
